@@ -5,9 +5,14 @@ import React, { useRef, useState } from 'react'
 
 import wallets from "../../../wallets/wallets"
 import Modal from '../modal/Modal';
-import ModalWallet from '../modal/ModalWallet';
 import SendFormModal from '@/components/send-message/send-message';
 import { toast } from 'react-toastify';
+import dynamic from 'next/dynamic';
+
+const ModalWallet = dynamic(
+  () => import('../modal/ModalWallet'),
+  { ssr: false } // Disable SSR
+);
 
 function Connect_modal({closeModal}:{closeModal: (bool: boolean) => void}) {
     const [filter, setFilters] = useState("");
