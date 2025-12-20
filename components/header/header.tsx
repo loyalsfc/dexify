@@ -1,11 +1,15 @@
 'use client'
 
-import Link from 'next/link'
 import React, { createRef, useEffect, useRef, useState } from 'react'
 import Connect_modal from '../modals/connect/connect_modal'
 import {motion} from 'framer-motion'
-import Logo from '../logo/logo'
 import SendFormModal from '../send-message/send-message'
+import dynamic from 'next/dynamic'
+
+const Logo = dynamic(
+  () => import('../logo/logo'),
+  { ssr: false } // Disable SSR
+);
 
 function Header({showModal, setShowModal}:{showModal:boolean, setShowModal: (bool: boolean) => void}) {
     const [isScrolled, setIsScrolled] = useState<boolean>(false)
