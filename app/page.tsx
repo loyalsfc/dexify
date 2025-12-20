@@ -3,12 +3,17 @@
 import About from '@/components/about/about'
 import Footer from '@/components/footer/footer'
 import Subscribe from '@/components/footer/subscribe'
-import Header from '@/components/header/header'
 import Hero from '@/components/hero/hero'
 import WhyJoin from '@/components/why_join/why-join'
 import { useEffect, useState } from 'react'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import dynamic from 'next/dynamic';
+
+const Header = dynamic(
+  () => import('@/components/header/header'),
+  { ssr: false } // Disable SSR
+);
 
 export default function Home() {
   const [showModal, setShowModal] = useState<boolean>(false)

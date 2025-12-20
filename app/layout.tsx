@@ -1,9 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Poppins, Ubuntu } from 'next/font/google'
+import { Poppins, Montserrat } from 'next/font/google'
 
 const poppin = Poppins({ weight: ["400", "500", "600", "700", "800", "900"], subsets: ["latin"] })
-const ubuntu = Ubuntu({ 
+const ubuntu = Montserrat({ 
   weight: ["400", "500", "700"], 
   subsets: ["latin"] ,
   variable: "--font-ubuntu"
