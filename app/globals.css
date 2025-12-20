@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --background-color: #F6F0FF;
+
+  scroll-behavior: smooth;
+}
+
+*{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+  }
+  .hero-card{
+    @apply p-4 sm:p-5 w-1/2 max-w-[200px] sm:max-w-[250px] rounded-3xl flex justify-between items-center bg-gradient-to-r from-[#211C5E] via-[#34316E] to-[#452B63]
+  }
+  .btn-color{
+    @apply bg-gradient-to-b from-[#201E30] to-[#4E3962] hover:to-[#201E30] hover:from-[#4E3962] transition-all
+  }
+  .msg-input{
+    @apply border-t-0 border-x-0 focus:outline-none border-b border-b-[#858585] text-[#858585] text-sm
+  }
+  .msg-input:focus{
+    @apply border-b-[#4E3962]
+  }
+  .switch-btn{
+    @apply p-2 cursor-pointer border-b-2 border-b-transparent hover:border-b-blue-600
+  }
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #141414;
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body{
+  background-color: var(--background-color);
+}
+.logo-text{
+  background: linear-gradient(180deg, #201E30 0%, #4E3692 63.97%), linear-gradient(180deg, #A397AA 0%, #413C44 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+}
+
+.theme-loader::before, .theme-loader::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #5917A7;
+  position: absolute;
+  animation: cssload-load 0.91s infinite alternate ease-in-out;
+  -o-animation: cssload-load 0.91s infinite alternate ease-in-out;
+  -ms-animation: cssload-load 0.91s infinite alternate ease-in-out;
+  -webkit-animation: cssload-load 0.91s infinite alternate ease-in-out;
+  -moz-animation: cssload-load 0.91s infinite alternate ease-in-out;
+}
+
+
+.theme-loader::after {
+  bottom: 0;
+}
+
+
+.theme-loader {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  color: #5917A7;
+  letter-spacing: 0.2em;
+  text-align: center;
+  width: 244px;
+  height: 49px;
+  line-height: 49px;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+}
+
+#page-preloader{
+  background: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+}
+
+@keyframes cssload-load {
+  0% {
+    left: 0;
+    height: 29px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 39px;
+  }
+  100% {
+    left: 229px;
+    height: 29px;
+    width: 15px;
+  }
+  }
+  
+  @-o-keyframes cssload-load {
+    0% {
+      left: 0;
+      height: 29px;
+      width: 15px;
+    }
+    50% {
+      height: 8px;
+      width: 39px;
+    }
+    100% {
+      left: 229px;
+      height: 29px;
+      width: 15px;
+    }
+  }
+  
+  @-ms-keyframes cssload-load {
+  0% {
+    left: 0;
+    height: 29px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 39px;
+  }
+  100% {
+    left: 229px;
+    height: 29px;
+    width: 15px;
+  }
+}
+  
+@-webkit-keyframes cssload-load {
+    0% {
+    left: 0;
+    height: 29px;
+    width: 15px;
+    }
+    50% {
+    height: 8px;
+    width: 39px;
+    }
+    100% {
+    left: 229px;
+    height: 29px;
+    width: 15px;
+    }
+}
+  
+@-moz-keyframes cssload-load {
+    0% {
+      left: 0;
+      height: 29px;
+      width: 15px;
+    }
+    50% {
+      height: 8px;
+      width: 39px;
+    }
+    100% {
+      left: 229px;
+      height: 29px;
+      width: 15px;
+    }
+}

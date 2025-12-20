@@ -1,0 +1,27 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="social" clip-path="url(#clip0_119_503)" filter="url(#filter0_dd_119_503)">
+<circle id="Ellipse 17" cx="32" cy="24" r="12" fill="white"/>
+<path id="Vector" d="M34.7692 32V29.0552C34.7981 28.6923 34.7485 28.3276 34.6239 27.9852C34.4992 27.6427 34.3023 27.3305 34.0462 27.0691C36.4615 26.8028 39 25.8973 39 21.7426C38.9998 20.6802 38.5867 19.6586 37.8462 18.8891C38.1968 17.9596 38.172 16.9323 37.7769 16.0204C37.7769 16.0204 36.8692 15.7541 34.7692 17.1466C33.0062 16.6739 31.1477 16.6739 29.3846 17.1466C27.2846 15.7541 26.3769 16.0204 26.3769 16.0204C25.9818 16.9323 25.957 17.9596 26.3077 18.8891C25.5616 19.6643 25.1481 20.6952 25.1538 21.7654C25.1538 25.8897 27.6923 26.7952 30.1077 27.092C29.8546 27.3507 29.6594 27.6592 29.5349 27.9974C29.4103 28.3357 29.3591 28.6961 29.3846 29.0552V32M29.3846 29.7172C25.5385 30.8586 25.5385 27.8149 24 27.4344L29.3846 29.7172Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<filter id="filter0_dd_119_503" x="0" y="0" width="64" height="64" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="4" operator="erode" in="SourceAlpha" result="effect1_dropShadow_119_503"/>
+<feOffset dy="8"/>
+<feGaussianBlur stdDeviation="12"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0941176 0 0 0 0 0.152941 0 0 0 0 0.294118 0 0 0 0.08 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_119_503"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="6" operator="erode" in="SourceAlpha" result="effect2_dropShadow_119_503"/>
+<feOffset dy="6"/>
+<feGaussianBlur stdDeviation="6"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0941176 0 0 0 0 0.152941 0 0 0 0 0.294118 0 0 0 0.12 0"/>
+<feBlend mode="normal" in2="effect1_dropShadow_119_503" result="effect2_dropShadow_119_503"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_119_503" result="shape"/>
+</filter>
+<clipPath id="clip0_119_503">
+<rect width="24" height="24" fill="white" transform="translate(20 12)"/>
+</clipPath>
+</defs>
+</svg>
