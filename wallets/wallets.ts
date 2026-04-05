@@ -1,4 +1,6 @@
 import Maiar from "@/public/sync_wallet/maiar.png";
+import WalletConnect from "@/public/sync_wallet/wallet-connect.png";
+import Trust from "@/public/sync_wallet/trust-wallet.png";
 
 export default [
     {
@@ -9,12 +11,12 @@ export default [
     {
         id: 2,
         name: "Wallet Connect",
-        image: "/sync_wallet/wallet-connect.png"
+        image: WalletConnect
     },
     {
         id: 3,
         name: "Trust",
-        image: "/sync_wallet/trust-wallet.png"
+        image: Trust
     },
     {
         id: 75,

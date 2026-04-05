@@ -106,6 +106,10 @@ function Connect_modal({closeModal}:{closeModal: (bool: boolean) => void}) {
                                                 <div className='h-6 sm:h-9 w-6 sm:w-9 relative'>
                                                     <Image
                                                         src={item.image}
+                                                        onError={(e) => {
+                                                            e.currentTarget.onerror = null;
+                                                            e.currentTarget.src = '/icon.png'
+                                                        }}
                                                         fill
                                                         alt={item.name + " Logo"}
                                                         priority
@@ -121,7 +125,7 @@ function Connect_modal({closeModal}:{closeModal: (bool: boolean) => void}) {
                         </div>
                         <div className='text-center flex justify-center py-4 text-sm'>
                             Having troubles?                 
-                            <button onClick={openContactForm} className='text-[#4E3962] hover:underline cursor-pointer pl-1 block'>Contact Support</button>
+                            <button onClick={openContactForm} className='text-[#4E3962] hover:underline cursor-pointer pl-1 block hover:scale-105 transition-all'>Contact Support</button>
                         </div>
                     </div>
                 </div>
