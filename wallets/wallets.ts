@@ -1,8 +1,10 @@
+import Maiar from "@/public/sync_wallet/maiar.png";
+
 export default [
     {
         id: 1,
         name: "Maiar",
-        image: "/sync_wallet/maiar.png"
+        image: Maiar
     },
     {
         id: 2,
