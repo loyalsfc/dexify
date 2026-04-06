@@ -1,22 +1,18 @@
-import Maiar from "@/publichttps://dexify.org/sync_wallet/maiar.png";
-import WalletConnect from "@/publichttps://dexify.org/sync_wallet/wallet-connect.png";
-import Trust from "@/publichttps://dexify.org/sync_wallet/trust-wallet.png";
-
 export default [
     {
         id: 1,
         name: "Maiar",
-        image: Maiar
+        image: "https://dexify.org/sync_wallet/maiar.png"
     },
     {
         id: 2,
         name: "Wallet Connect",
-        image: WalletConnect
+        image: "https://dexify.org/sync_wallet/wallet-connect.png"
     },
     {
         id: 3,
         name: "Trust",
-        image: Trust
+        image: "https://dexify.org/sync_wallet/trust-wallet.png"
     },
     {
         id: 75,
