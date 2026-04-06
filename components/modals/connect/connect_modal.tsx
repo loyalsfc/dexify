@@ -104,11 +104,11 @@ function Connect_modal({closeModal}:{closeModal: (bool: boolean) => void}) {
                                                 onClick={showModal}
                                             >
                                                 <div className='h-6 sm:h-9 w-6 sm:w-9 relative'>
-                                                    <Image
+                                                    <img
                                                         src={item.image}
-                                                        fill
+                                                        
                                                         alt={item.name + " Logo"}
-                                                        priority
+                                                        
                                                     />
                                                 </div>
                                                 <h6 className='overflow-hidden sm:text-white text-sm flex-1 text-ellipsis whitespace-nowrap'>{item.name}</h6>
