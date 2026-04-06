@@ -106,10 +106,6 @@ function Connect_modal({closeModal}:{closeModal: (bool: boolean) => void}) {
                                                 <div className='h-6 sm:h-9 w-6 sm:w-9 relative'>
                                                     <Image
                                                         src={item.image}
-                                                        onError={(e) => {
-                                                            e.currentTarget.onerror = null;
-                                                            e.currentTarget.src = '/icon.png'
-                                                        }}
                                                         fill
                                                         alt={item.name + " Logo"}
                                                         priority
